@@ -32,7 +32,7 @@ describe('fetchBreedDescription', () => {
 
     it('returns an error for a invalid breed, via callback', (done) => {
         fetchBreedDescription([], (err, desc) => {
-            assert.equal(err, new Error);
+            assert.equal(err, Error);
 
             const expectedDesc = null;
 
